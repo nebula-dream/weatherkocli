@@ -1,3 +1,0 @@
-[console_scripts]
-weather = weathercli.cli:main
-wt = weathercli.cli:main
