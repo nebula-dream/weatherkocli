@@ -1,13 +1,11 @@
 # weathercli
 
-터미널에서 바로 확인하는 날씨 대시보드. neofetch 스타일로 왼쪽에 아트,
+터미널에서 바로 확인하는 날씨 대시보드, neofetch 스타일로 왼쪽에 아트,
 오른쪽에 날씨 정보를 나란히 보여줍니다.
-
-데이터는 Open-Meteo(https://open-meteo.com) 무료 공개 API 사용, API 키 불필요.
 
 ## 설치
 
-Python 3.9 이상 필요.
+Python 3.9 이상
 
 ```bash
 pip install .
@@ -21,7 +19,7 @@ pipx install .
 wt                   현재 날씨 보기
 wt set               설정 변경 (= weather set = wt setting)
 wt --logo list       사용 가능한 로고 목록
-wt --logo <이름>     해당 로고로 한 번만 날씨 보기 (저장 안됨)
+wt --logo <이름>     해당 로고로 한 번만 날씨 보기
 wt --logopin <이름>  해당 로고를 기본 아트로 고정 + 날씨 표시
 weather              wt 와 동일
 ```
@@ -43,7 +41,7 @@ weather              wt 와 동일
   - 직접 아스키 아트 입력 (여러 줄, Esc→Enter 완료)
   - 이미지 파일 사용 (PNG/JPG → 터미널 블록 자동 변환)
   - 로고 목록에서 선택 (wt --logo list 의 이름들)
-  - 리스트에 추가 — 아스키 아트를 이름 붙여 등록 → wt --logo 이름 사용 가능
+  - 리스트에 추가 — 아스키 아트를 이름 붙여 등록, wt --logo 이름 사용 가능
   - 사용자 로고 삭제
 
 **데이터 보정**
