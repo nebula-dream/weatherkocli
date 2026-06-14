@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "weatherkocli"
+version = "1.0.0"
+description = "Terminal weather dashboard for Korea and the world"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "requests>=2.31.0",
+    "rich>=13.7.0",
+    "questionary>=2.0.0",
+    "Pillow>=10.0.0",
+]
+
+[project.scripts]
+wt = "weathercli.cli:main"
+weather = "weathercli.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["weathercli*"]
+
+[tool.setuptools.package-data]
+weathercli = ["logos/*.txt"]
